@@ -1,0 +1,31 @@
+{
+  "truevocationApp": {
+    "post": {
+      "home": {
+        "title": "Posts",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Post",
+        "createOrEditLabel": "Создать или отредактировать Post",
+        "notFound": "Posts не найдено"
+      },
+      "created": "Новый Post создан с идентификатором {{ param }}",
+      "updated": "Post обновлен с идентификатором {{ param }}",
+      "deleted": "Post удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Post"
+      },
+      "id": "ID",
+      "title": "Title",
+      "shortDescription": "Short Description",
+      "description": "Description",
+      "picture": "Picture",
+      "createdDate": "Created Date",
+      "likes": "Likes",
+      "favorite": "Favorite",
+      "comments": "Comments"
+    }
+  }
+}

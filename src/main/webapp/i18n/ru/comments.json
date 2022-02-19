@@ -1,0 +1,30 @@
+{
+  "truevocationApp": {
+    "comments": {
+      "home": {
+        "title": "Comments",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Comments",
+        "createOrEditLabel": "Создать или отредактировать Comments",
+        "notFound": "Comments не найдено"
+      },
+      "created": "Новый Comments создан с идентификатором {{ param }}",
+      "updated": "Comments обновлен с идентификатором {{ param }}",
+      "deleted": "Comments удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Comments {{ id }}?"
+      },
+      "detail": {
+        "title": "Comments"
+      },
+      "id": "ID",
+      "text": "Text",
+      "addedDate": "Added Date",
+      "likes": "Likes",
+      "commentAnswer": "Comment Answer",
+      "university": "University",
+      "user": "User",
+      "post": "Post"
+    }
+  }
+}

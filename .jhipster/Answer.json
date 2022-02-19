@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164513",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "answer",
+  "fields": [
+    {
+      "fieldName": "answer",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Answer",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "answerUser",
+      "otherEntityRelationshipName": "answer",
+      "ownerSide": false,
+      "relationshipName": "answerUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "question",
+      "otherEntityRelationshipName": "answer",
+      "ownerSide": false,
+      "relationshipName": "question",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

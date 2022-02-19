@@ -1,0 +1,32 @@
+{
+  "truevocationApp": {
+    "specialty": {
+      "home": {
+        "title": "Specialties",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Specialty",
+        "createOrEditLabel": "Создать или отредактировать Specialty",
+        "notFound": "Specialties не найдено"
+      },
+      "created": "Новый Specialty создан с идентификатором {{ param }}",
+      "updated": "Specialty обновлен с идентификатором {{ param }}",
+      "deleted": "Specialty удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Specialty {{ id }}?"
+      },
+      "detail": {
+        "title": "Specialty"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "totalGrants": "Total Grants",
+      "minScoreGeneral": "Min Score General",
+      "minScoreQuota": "Min Score Quota",
+      "picture": "Picture",
+      "subject": "Subject",
+      "profession": "Profession",
+      "faculty": "Faculty"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "question": {
+      "home": {
+        "title": "Questions",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Question",
+        "createOrEditLabel": "Создать или отредактировать Question",
+        "notFound": "Questions не найдено"
+      },
+      "created": "Новый Question создан с идентификатором {{ param }}",
+      "updated": "Question обновлен с идентификатором {{ param }}",
+      "deleted": "Question удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Question {{ id }}?"
+      },
+      "detail": {
+        "title": "Question"
+      },
+      "id": "ID",
+      "question": "Question",
+      "answer": "Answer",
+      "answerUser": "Answer User",
+      "profTest": "Prof Test"
+    }
+  }
+}

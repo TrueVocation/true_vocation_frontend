@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "language": {
+      "home": {
+        "title": "Languages",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Language",
+        "createOrEditLabel": "Создать или отредактировать Language",
+        "notFound": "Languages не найдено"
+      },
+      "created": "Новый Language создан с идентификатором {{ param }}",
+      "updated": "Language обновлен с идентификатором {{ param }}",
+      "deleted": "Language удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Language {{ id }}?"
+      },
+      "detail": {
+        "title": "Language"
+      },
+      "id": "ID",
+      "language": "Language",
+      "level": "Level",
+      "portfolio": "Portfolio"
+    }
+  }
+}

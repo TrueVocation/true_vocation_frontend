@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "faculty": {
+      "home": {
+        "title": "Faculties",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Faculty",
+        "createOrEditLabel": "Создать или отредактировать Faculty",
+        "notFound": "Faculties не найдено"
+      },
+      "created": "Новый Faculty создан с идентификатором {{ param }}",
+      "updated": "Faculty обновлен с идентификатором {{ param }}",
+      "deleted": "Faculty удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Faculty {{ id }}?"
+      },
+      "detail": {
+        "title": "Faculty"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "specialty": "Specialty",
+      "university": "University"
+    }
+  }
+}

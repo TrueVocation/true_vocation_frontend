@@ -1,0 +1,59 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164505",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "post",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shortDescription",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Post",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "likes",
+      "otherEntityRelationshipName": "post",
+      "relationshipName": "likes",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "favorite",
+      "otherEntityRelationshipName": "post",
+      "relationshipName": "favorite",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "comments",
+      "otherEntityRelationshipName": "post",
+      "relationshipName": "comments",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

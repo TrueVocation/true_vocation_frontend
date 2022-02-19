@@ -1,0 +1,33 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164458",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "demand_profession_city",
+  "fields": [
+    {
+      "fieldName": "actualInPercent",
+      "fieldType": "Double"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "DemandProfessionCity",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "profession",
+      "otherEntityRelationshipName": "demandProfessionCity",
+      "relationshipName": "profession",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "city",
+      "otherEntityRelationshipName": "demandProfessionCity",
+      "relationshipName": "city",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

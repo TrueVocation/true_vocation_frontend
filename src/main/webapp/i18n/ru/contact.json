@@ -1,0 +1,28 @@
+{
+  "truevocationApp": {
+    "contact": {
+      "home": {
+        "title": "Contacts",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Contact",
+        "createOrEditLabel": "Создать или отредактировать Contact",
+        "notFound": "Contacts не найдено"
+      },
+      "created": "Новый Contact создан с идентификатором {{ param }}",
+      "updated": "Contact обновлен с идентификатором {{ param }}",
+      "deleted": "Contact удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Contact {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact"
+      },
+      "id": "ID",
+      "type": "Type",
+      "contact": "Contact",
+      "course": "Course",
+      "university": "University",
+      "portfolio": "Portfolio"
+    }
+  }
+}

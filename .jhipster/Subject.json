@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164501",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "subject",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Subject",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "specialty",
+      "otherEntityRelationshipName": "subject",
+      "ownerSide": false,
+      "relationshipName": "specialty",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

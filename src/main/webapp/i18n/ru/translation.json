@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "translation": {
+      "home": {
+        "title": "Translations",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Translation",
+        "createOrEditLabel": "Создать или отредактировать Translation",
+        "notFound": "Translations не найдено"
+      },
+      "created": "Новый Translation создан с идентификатором {{ param }}",
+      "updated": "Translation обновлен с идентификатором {{ param }}",
+      "deleted": "Translation удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Translation {{ id }}?"
+      },
+      "detail": {
+        "title": "Translation"
+      },
+      "id": "ID",
+      "code": "Code",
+      "en": "En",
+      "ru": "Ru",
+      "kk": "Kk"
+    }
+  }
+}

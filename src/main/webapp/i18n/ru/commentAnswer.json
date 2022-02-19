@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "commentAnswer": {
+      "home": {
+        "title": "Comment Answers",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Comment Answer",
+        "createOrEditLabel": "Создать или отредактировать Comment Answer",
+        "notFound": "Comment Answers не найдено"
+      },
+      "created": "Новый Comment Answer создан с идентификатором {{ param }}",
+      "updated": "Comment Answer обновлен с идентификатором {{ param }}",
+      "deleted": "Comment Answer удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Comment Answer {{ id }}?"
+      },
+      "detail": {
+        "title": "Comment Answer"
+      },
+      "id": "ID",
+      "text": "Text",
+      "addedDate": "Added Date",
+      "comment": "Comment",
+      "user": "User"
+    }
+  }
+}

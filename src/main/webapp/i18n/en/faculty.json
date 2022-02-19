@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "faculty": {
+      "home": {
+        "title": "Faculties",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Faculty",
+        "createOrEditLabel": "Create or edit a Faculty",
+        "notFound": "No Faculties found"
+      },
+      "created": "A new Faculty is created with identifier {{ param }}",
+      "updated": "A Faculty is updated with identifier {{ param }}",
+      "deleted": "A Faculty is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Faculty {{ id }}?"
+      },
+      "detail": {
+        "title": "Faculty"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "specialty": "Specialty",
+      "university": "University"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "subject": {
+      "home": {
+        "title": "Subjects",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Subject",
+        "createOrEditLabel": "Создать или отредактировать Subject",
+        "notFound": "Subjects не найдено"
+      },
+      "created": "Новый Subject создан с идентификатором {{ param }}",
+      "updated": "Subject обновлен с идентификатором {{ param }}",
+      "deleted": "Subject удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Subject {{ id }}?"
+      },
+      "detail": {
+        "title": "Subject"
+      },
+      "id": "ID",
+      "name": "Name",
+      "picture": "Picture",
+      "specialty": "Specialty"
+    }
+  }
+}

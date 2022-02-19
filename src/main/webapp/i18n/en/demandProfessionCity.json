@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "demandProfessionCity": {
+      "home": {
+        "title": "Demand Profession Cities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Demand Profession City",
+        "createOrEditLabel": "Create or edit a Demand Profession City",
+        "notFound": "No Demand Profession Cities found"
+      },
+      "created": "A new Demand Profession City is created with identifier {{ param }}",
+      "updated": "A Demand Profession City is updated with identifier {{ param }}",
+      "deleted": "A Demand Profession City is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Demand Profession City {{ id }}?"
+      },
+      "detail": {
+        "title": "Demand Profession City"
+      },
+      "id": "ID",
+      "actualInPercent": "Actual In Percent",
+      "profession": "Profession",
+      "city": "City"
+    }
+  }
+}

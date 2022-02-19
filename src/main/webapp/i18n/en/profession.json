@@ -1,0 +1,32 @@
+{
+  "truevocationApp": {
+    "profession": {
+      "home": {
+        "title": "Professions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Profession",
+        "createOrEditLabel": "Create or edit a Profession",
+        "notFound": "No Professions found"
+      },
+      "created": "A new Profession is created with identifier {{ param }}",
+      "updated": "A Profession is updated with identifier {{ param }}",
+      "deleted": "A Profession is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Profession {{ id }}?"
+      },
+      "detail": {
+        "title": "Profession"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "employability": "Employability",
+      "averageSalary": "Average Salary",
+      "picture": "Picture",
+      "demandProfessionCity": "Demand Profession City",
+      "recommendation": "Recommendation",
+      "course": "Course",
+      "specialty": "Specialty"
+    }
+  }
+}

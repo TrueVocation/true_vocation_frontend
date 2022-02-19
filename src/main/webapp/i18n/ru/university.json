@@ -1,0 +1,36 @@
+{
+  "truevocationApp": {
+    "university": {
+      "home": {
+        "title": "Universities",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый University",
+        "createOrEditLabel": "Создать или отредактировать University",
+        "notFound": "Universities не найдено"
+      },
+      "created": "Новый University создан с идентификатором {{ param }}",
+      "updated": "University обновлен с идентификатором {{ param }}",
+      "deleted": "University удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить University {{ id }}?"
+      },
+      "detail": {
+        "title": "University"
+      },
+      "id": "ID",
+      "name": "Name",
+      "address": "Address",
+      "description": "Description",
+      "dormitory": "Dormitory",
+      "military": "Military",
+      "status": "Status",
+      "code": "Code",
+      "logo": "Logo",
+      "contact": "Contact",
+      "favorite": "Favorite",
+      "comments": "Comments",
+      "faculty": "Faculty",
+      "city": "City"
+    }
+  }
+}

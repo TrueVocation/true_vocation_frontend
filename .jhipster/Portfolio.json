@@ -1,0 +1,70 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164508",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "portfolio",
+  "fields": [
+    {
+      "fieldName": "picture",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "gender",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hobby",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "aboutMe",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Portfolio",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "appUser",
+      "otherEntityRelationshipName": "portfolio",
+      "ownerSide": true,
+      "relationshipName": "appUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "portfolio",
+      "relationshipName": "contact",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "achievement",
+      "otherEntityRelationshipName": "portfolio",
+      "relationshipName": "achievement",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "language",
+      "otherEntityRelationshipName": "portfolio",
+      "ownerSide": true,
+      "relationshipName": "language",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "school",
+      "otherEntityRelationshipName": "portfolio",
+      "ownerSide": true,
+      "relationshipName": "school",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

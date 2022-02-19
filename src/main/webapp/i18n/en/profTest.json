@@ -1,0 +1,28 @@
+{
+  "truevocationApp": {
+    "profTest": {
+      "home": {
+        "title": "Prof Tests",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Prof Test",
+        "createOrEditLabel": "Create or edit a Prof Test",
+        "notFound": "No Prof Tests found"
+      },
+      "created": "A new Prof Test is created with identifier {{ param }}",
+      "updated": "A Prof Test is updated with identifier {{ param }}",
+      "deleted": "A Prof Test is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Prof Test {{ id }}?"
+      },
+      "detail": {
+        "title": "Prof Test"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "instruction": "Instruction",
+      "question": "Question",
+      "testResult": "Test Result"
+    }
+  }
+}

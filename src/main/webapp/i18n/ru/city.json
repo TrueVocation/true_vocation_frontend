@@ -1,0 +1,28 @@
+{
+  "truevocationApp": {
+    "city": {
+      "home": {
+        "title": "Cities",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый City",
+        "createOrEditLabel": "Создать или отредактировать City",
+        "notFound": "Cities не найдено"
+      },
+      "created": "Новый City создан с идентификатором {{ param }}",
+      "updated": "City обновлен с идентификатором {{ param }}",
+      "deleted": "City удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить City {{ id }}?"
+      },
+      "detail": {
+        "title": "City"
+      },
+      "id": "ID",
+      "name": "Name",
+      "demandProfessionCity": "Demand Profession City",
+      "school": "School",
+      "university": "University",
+      "course": "Course"
+    }
+  }
+}

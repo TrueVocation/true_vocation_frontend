@@ -1,0 +1,32 @@
+{
+  "truevocationApp": {
+    "portfolio": {
+      "home": {
+        "title": "Portfolios",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Portfolio",
+        "createOrEditLabel": "Create or edit a Portfolio",
+        "notFound": "No Portfolios found"
+      },
+      "created": "A new Portfolio is created with identifier {{ param }}",
+      "updated": "A Portfolio is updated with identifier {{ param }}",
+      "deleted": "A Portfolio is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Portfolio {{ id }}?"
+      },
+      "detail": {
+        "title": "Portfolio"
+      },
+      "id": "ID",
+      "picture": "Picture",
+      "gender": "Gender",
+      "hobby": "Hobby",
+      "aboutMe": "About Me",
+      "appUser": "App User",
+      "contact": "Contact",
+      "achievement": "Achievement",
+      "language": "Language",
+      "school": "School"
+    }
+  }
+}

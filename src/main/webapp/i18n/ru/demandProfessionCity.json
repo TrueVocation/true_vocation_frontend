@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "demandProfessionCity": {
+      "home": {
+        "title": "Demand Profession Cities",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Demand Profession City",
+        "createOrEditLabel": "Создать или отредактировать Demand Profession City",
+        "notFound": "Demand Profession Cities не найдено"
+      },
+      "created": "Новый Demand Profession City создан с идентификатором {{ param }}",
+      "updated": "Demand Profession City обновлен с идентификатором {{ param }}",
+      "deleted": "Demand Profession City удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Demand Profession City {{ id }}?"
+      },
+      "detail": {
+        "title": "Demand Profession City"
+      },
+      "id": "ID",
+      "actualInPercent": "Actual In Percent",
+      "profession": "Profession",
+      "city": "City"
+    }
+  }
+}

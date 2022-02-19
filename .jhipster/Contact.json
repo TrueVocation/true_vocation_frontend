@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164500",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "contact",
+  "fields": [
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contact",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Contact",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "course",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "university",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "university",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "portfolio",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "portfolio",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

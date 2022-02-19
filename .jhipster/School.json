@@ -1,0 +1,38 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164507",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "school",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "number",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "School",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "city",
+      "otherEntityRelationshipName": "school",
+      "relationshipName": "city",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "portfolio",
+      "otherEntityRelationshipName": "school",
+      "ownerSide": false,
+      "relationshipName": "portfolio",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

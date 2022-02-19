@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "likes": {
+      "home": {
+        "title": "Likes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Likes",
+        "createOrEditLabel": "Create or edit a Likes",
+        "notFound": "No Likes found"
+      },
+      "created": "A new Likes is created with identifier {{ param }}",
+      "updated": "A Likes is updated with identifier {{ param }}",
+      "deleted": "A Likes is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Likes {{ id }}?"
+      },
+      "detail": {
+        "title": "Likes"
+      },
+      "id": "ID",
+      "comment": "Comment",
+      "user": "User",
+      "post": "Post"
+    }
+  }
+}

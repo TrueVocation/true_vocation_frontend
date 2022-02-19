@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "answerUser": {
+      "home": {
+        "title": "Answer Users",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Answer User",
+        "createOrEditLabel": "Создать или отредактировать Answer User",
+        "notFound": "Answer Users не найдено"
+      },
+      "created": "Новый Answer User создан с идентификатором {{ param }}",
+      "updated": "Answer User обновлен с идентификатором {{ param }}",
+      "deleted": "Answer User удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Answer User {{ id }}?"
+      },
+      "detail": {
+        "title": "Answer User"
+      },
+      "id": "ID",
+      "question": "Question",
+      "answer": "Answer",
+      "testResult": "Test Result"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "testResult": {
+      "home": {
+        "title": "Test Results",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Test Result",
+        "createOrEditLabel": "Создать или отредактировать Test Result",
+        "notFound": "Test Results не найдено"
+      },
+      "created": "Новый Test Result создан с идентификатором {{ param }}",
+      "updated": "Test Result обновлен с идентификатором {{ param }}",
+      "deleted": "Test Result удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Test Result {{ id }}?"
+      },
+      "detail": {
+        "title": "Test Result"
+      },
+      "id": "ID",
+      "appUser": "App User",
+      "recommendation": "Recommendation",
+      "answerUser": "Answer User",
+      "profTest": "Prof Test"
+    }
+  }
+}

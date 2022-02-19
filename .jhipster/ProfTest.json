@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164511",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "prof_test",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "instruction",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProfTest",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "question",
+      "otherEntityRelationshipName": "profTest",
+      "relationshipName": "question",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "testResult",
+      "otherEntityRelationshipName": "profTest",
+      "relationshipName": "testResult",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

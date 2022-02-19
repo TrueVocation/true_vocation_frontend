@@ -1,0 +1,45 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164452",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "city",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "City",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "demandProfessionCity",
+      "otherEntityRelationshipName": "city",
+      "relationshipName": "demandProfessionCity",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "school",
+      "otherEntityRelationshipName": "city",
+      "relationshipName": "school",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "university",
+      "otherEntityRelationshipName": "city",
+      "relationshipName": "university",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "city",
+      "relationshipName": "course",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

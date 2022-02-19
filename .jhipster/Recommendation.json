@@ -1,0 +1,29 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164515",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "recommendation",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Recommendation",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "testResult",
+      "otherEntityRelationshipName": "recommendation",
+      "ownerSide": false,
+      "relationshipName": "testResult",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "profession",
+      "otherEntityRelationshipName": "recommendation",
+      "relationshipName": "profession",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

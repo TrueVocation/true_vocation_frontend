@@ -1,0 +1,65 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164459",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "profession",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "employability",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "averageSalary",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Profession",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "demandProfessionCity",
+      "otherEntityRelationshipName": "profession",
+      "relationshipName": "demandProfessionCity",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "recommendation",
+      "otherEntityRelationshipName": "profession",
+      "relationshipName": "recommendation",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "profession",
+      "ownerSide": true,
+      "relationshipName": "course",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "specialty",
+      "otherEntityRelationshipName": "profession",
+      "ownerSide": false,
+      "relationshipName": "specialty",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

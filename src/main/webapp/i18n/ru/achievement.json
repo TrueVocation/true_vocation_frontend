@@ -1,0 +1,28 @@
+{
+  "truevocationApp": {
+    "achievement": {
+      "home": {
+        "title": "Achievements",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Achievement",
+        "createOrEditLabel": "Создать или отредактировать Achievement",
+        "notFound": "Achievements не найдено"
+      },
+      "created": "Новый Achievement создан с идентификатором {{ param }}",
+      "updated": "Achievement обновлен с идентификатором {{ param }}",
+      "deleted": "Achievement удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Achievement {{ id }}?"
+      },
+      "detail": {
+        "title": "Achievement"
+      },
+      "id": "ID",
+      "name": "Name",
+      "type": "Type",
+      "receivedDate": "Received Date",
+      "orientation": "Orientation",
+      "portfolio": "Portfolio"
+    }
+  }
+}

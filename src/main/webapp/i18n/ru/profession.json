@@ -1,0 +1,32 @@
+{
+  "truevocationApp": {
+    "profession": {
+      "home": {
+        "title": "Professions",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Profession",
+        "createOrEditLabel": "Создать или отредактировать Profession",
+        "notFound": "Professions не найдено"
+      },
+      "created": "Новый Profession создан с идентификатором {{ param }}",
+      "updated": "Profession обновлен с идентификатором {{ param }}",
+      "deleted": "Profession удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Profession {{ id }}?"
+      },
+      "detail": {
+        "title": "Profession"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "employability": "Employability",
+      "averageSalary": "Average Salary",
+      "picture": "Picture",
+      "demandProfessionCity": "Demand Profession City",
+      "recommendation": "Recommendation",
+      "course": "Course",
+      "specialty": "Specialty"
+    }
+  }
+}

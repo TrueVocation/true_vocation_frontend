@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "likes": {
+      "home": {
+        "title": "Likes",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Likes",
+        "createOrEditLabel": "Создать или отредактировать Likes",
+        "notFound": "Likes не найдено"
+      },
+      "created": "Новый Likes создан с идентификатором {{ param }}",
+      "updated": "Likes обновлен с идентификатором {{ param }}",
+      "deleted": "Likes удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Likes {{ id }}?"
+      },
+      "detail": {
+        "title": "Likes"
+      },
+      "id": "ID",
+      "comment": "Comment",
+      "user": "User",
+      "post": "Post"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164454",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "faculty",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Faculty",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "specialty",
+      "otherEntityRelationshipName": "faculty",
+      "relationshipName": "specialty",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "university",
+      "otherEntityRelationshipName": "faculty",
+      "ownerSide": false,
+      "relationshipName": "university",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

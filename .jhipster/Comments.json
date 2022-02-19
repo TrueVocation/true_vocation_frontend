@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164503",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "comments",
+  "fields": [
+    {
+      "fieldName": "text",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addedDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Comments",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "likes",
+      "otherEntityRelationshipName": "comment",
+      "relationshipName": "likes",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "commentAnswer",
+      "otherEntityRelationshipName": "comment",
+      "relationshipName": "commentAnswer",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "university",
+      "otherEntityRelationshipName": "comments",
+      "relationshipName": "university",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "appUser",
+      "otherEntityRelationshipName": "comments",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "post",
+      "otherEntityRelationshipName": "comments",
+      "relationshipName": "post",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

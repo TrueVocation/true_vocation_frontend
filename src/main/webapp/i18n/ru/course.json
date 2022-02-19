@@ -1,0 +1,29 @@
+{
+  "truevocationApp": {
+    "course": {
+      "home": {
+        "title": "Courses",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Course",
+        "createOrEditLabel": "Создать или отредактировать Course",
+        "notFound": "Courses не найдено"
+      },
+      "created": "Новый Course создан с идентификатором {{ param }}",
+      "updated": "Course обновлен с идентификатором {{ param }}",
+      "deleted": "Course удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Course {{ id }}?"
+      },
+      "detail": {
+        "title": "Course"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "picture": "Picture",
+      "contact": "Contact",
+      "city": "City",
+      "profession": "Profession"
+    }
+  }
+}

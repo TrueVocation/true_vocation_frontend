@@ -1,0 +1,63 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164455",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "specialty",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "totalGrants",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minScoreGeneral",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "minScoreQuota",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Specialty",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "subject",
+      "otherEntityRelationshipName": "specialty",
+      "ownerSide": true,
+      "relationshipName": "subject",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "profession",
+      "otherEntityRelationshipName": "specialty",
+      "ownerSide": true,
+      "relationshipName": "profession",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "faculty",
+      "otherEntityRelationshipName": "specialty",
+      "relationshipName": "faculty",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

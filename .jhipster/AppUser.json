@@ -1,0 +1,70 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164517",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "app_user",
+  "fields": [
+    {
+      "fieldName": "phoneNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "birthdate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "AppUser",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "appUser",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "comments",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "comments",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "favorite",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "favorite",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "commentAnswer",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "commentAnswer",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "likes",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "likes",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "portfolio",
+      "otherEntityRelationshipName": "appUser",
+      "ownerSide": false,
+      "relationshipName": "portfolio",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "testResult",
+      "otherEntityRelationshipName": "appUser",
+      "ownerSide": false,
+      "relationshipName": "testResult",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

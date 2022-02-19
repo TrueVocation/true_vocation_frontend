@@ -1,0 +1,26 @@
+{
+  "truevocationApp": {
+    "answer": {
+      "home": {
+        "title": "Answers",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Answer",
+        "createOrEditLabel": "Создать или отредактировать Answer",
+        "notFound": "Answers не найдено"
+      },
+      "created": "Новый Answer создан с идентификатором {{ param }}",
+      "updated": "Answer обновлен с идентификатором {{ param }}",
+      "deleted": "Answer удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Answer {{ id }}?"
+      },
+      "detail": {
+        "title": "Answer"
+      },
+      "id": "ID",
+      "answer": "Answer",
+      "answerUser": "Answer User",
+      "question": "Question"
+    }
+  }
+}

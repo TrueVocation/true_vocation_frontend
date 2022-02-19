@@ -1,0 +1,32 @@
+{
+  "truevocationApp": {
+    "appUser": {
+      "home": {
+        "title": "App Users",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый App User",
+        "createOrEditLabel": "Создать или отредактировать App User",
+        "notFound": "App Users не найдено"
+      },
+      "created": "Новый App User создан с идентификатором {{ param }}",
+      "updated": "App User обновлен с идентификатором {{ param }}",
+      "deleted": "App User удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить App User {{ id }}?"
+      },
+      "detail": {
+        "title": "App User"
+      },
+      "id": "ID",
+      "phoneNumber": "Phone Number",
+      "birthdate": "Birthdate",
+      "user": "User",
+      "comments": "Comments",
+      "favorite": "Favorite",
+      "commentAnswer": "Comment Answer",
+      "likes": "Likes",
+      "portfolio": "Portfolio",
+      "testResult": "Test Result"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164457",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "translation",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "en",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ru",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "kk",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Translation",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceImpl"
+}

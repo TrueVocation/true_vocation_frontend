@@ -1,0 +1,25 @@
+{
+  "truevocationApp": {
+    "recommendation": {
+      "home": {
+        "title": "Recommendations",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Recommendation",
+        "createOrEditLabel": "Создать или отредактировать Recommendation",
+        "notFound": "Recommendations не найдено"
+      },
+      "created": "Новый Recommendation создан с идентификатором {{ param }}",
+      "updated": "Recommendation обновлен с идентификатором {{ param }}",
+      "deleted": "Recommendation удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Recommendation {{ id }}?"
+      },
+      "detail": {
+        "title": "Recommendation"
+      },
+      "id": "ID",
+      "testResult": "Test Result",
+      "profession": "Profession"
+    }
+  }
+}

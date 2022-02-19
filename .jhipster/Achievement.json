@@ -1,0 +1,39 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164510",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "achievement",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "receivedDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "orientation",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Achievement",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "portfolio",
+      "otherEntityRelationshipName": "achievement",
+      "relationshipName": "portfolio",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

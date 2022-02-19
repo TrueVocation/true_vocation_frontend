@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "school": {
+      "home": {
+        "title": "Schools",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый School",
+        "createOrEditLabel": "Создать или отредактировать School",
+        "notFound": "Schools не найдено"
+      },
+      "created": "Новый School создан с идентификатором {{ param }}",
+      "updated": "School обновлен с идентификатором {{ param }}",
+      "deleted": "School удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить School {{ id }}?"
+      },
+      "detail": {
+        "title": "School"
+      },
+      "id": "ID",
+      "name": "Name",
+      "number": "Number",
+      "city": "City",
+      "portfolio": "Portfolio"
+    }
+  }
+}

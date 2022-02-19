@@ -1,0 +1,205 @@
+entity City {
+  name String
+}
+
+entity Favorite {
+  type String
+}
+
+entity Faculty {
+  name String
+  description String maxlength(1000)
+}
+
+entity Specialty {
+  name String
+    description String maxlength(1000)
+    totalGrants Integer
+    minScoreGeneral Integer
+    minScoreQuota Integer
+    picture String
+}
+
+entity University {
+  name String
+    address String
+    description String maxlength(1000)
+    dormitory Boolean
+    military Boolean
+    status String
+    code String
+    logo String
+}
+
+entity Translation {
+  code String
+    en String
+    ru String
+    kk String
+}
+
+entity DemandProfessionCity{
+  actualInPercent Double
+}
+
+entity Profession {
+  name String
+    description String maxlength(1000)
+    employability String
+    averageSalary Integer
+    picture String
+}
+
+entity Contact {
+  type String
+    contact String maxlength(1000)
+}
+
+entity Subject {
+  name String
+    picture String
+}
+
+entity Likes {
+
+}
+
+entity Comments{
+  text String
+    addedDate LocalDate
+}
+
+entity CommentAnswer {
+  text String
+    addedDate LocalDate
+}
+
+entity Post {
+  title String
+    shortDescription String maxlength(1000)
+    description String maxlength(1000)
+    picture String
+    createdDate LocalDate
+}
+
+entity Course {
+  name String
+    description String maxlength(1000)
+    picture String
+}
+
+entity School {
+  name String
+    number Integer
+}
+
+entity Portfolio {
+  picture String
+    gender String
+    hobby String maxlength(1000)
+    aboutMe String maxlength(1000)
+}
+
+entity Language {
+  language String
+    level String
+}
+
+entity Achievement {
+  name String
+    type String
+    receivedDate LocalDate
+    orientation String
+}
+
+entity ProfTest {
+  name String
+    description String maxlength(1000)
+    instruction String maxlength(1000)
+}
+
+entity Question {
+  question String
+}
+
+entity Answer {
+  answer String
+}
+
+entity TestResult {
+
+}
+
+entity Recommendation {
+}
+
+entity AnswerUser {
+
+}
+
+entity AppUser {
+  phoneNumber String
+  birthdate LocalDate
+}
+
+
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+    Faculty to Specialty{faculty}
+     Profession to DemandProfessionCity{profession}
+    Profession to Recommendation{profession}
+    City to DemandProfessionCity{city}
+    City to School{city}
+    City to University{city}
+    City to Course{city}
+    Course to Contact{course}
+    University to Contact{university}
+    University to Favorite{university}
+    University to Comments{university}
+    Portfolio to Contact{portfolio}
+    Portfolio to Achievement{portfolio}
+    Comments to Likes{comment}
+    Comments to CommentAnswer{comment}
+    AppUser to Comments{user}
+    AppUser to Favorite{user}
+    AppUser to CommentAnswer{user}
+    AppUser to Likes{user}
+    Post to Likes{post}
+    Post to Favorite{post}
+    Post to Comments{post}
+    ProfTest to Question{profTest}
+    ProfTest to TestResult{profTest}
+    TestResult to AnswerUser{testResult}
+    ProfTest to TestResult{profTest}
+}
+
+relationship OneToOne {
+    Portfolio to AppUser
+    TestResult to AppUser
+    TestResult to Recommendation
+    AnswerUser to Question
+    AnswerUser to Answer
+    AppUser{user} to User
+}
+
+relationship ManyToMany {
+    Portfolio to Language
+    Portfolio to School
+    University to Faculty
+    Specialty to Subject
+    Specialty to Profession
+    Question to Answer
+    Profession to Course
+}
+
+// Set pagination options
+paginate * with infinite-scroll
+paginate * with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct except User
+
+// Set service options to all except few
+service all with serviceImpl except User
+

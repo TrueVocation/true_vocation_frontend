@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164509",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "language",
+  "fields": [
+    {
+      "fieldName": "language",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "level",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Language",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "portfolio",
+      "otherEntityRelationshipName": "language",
+      "ownerSide": false,
+      "relationshipName": "portfolio",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

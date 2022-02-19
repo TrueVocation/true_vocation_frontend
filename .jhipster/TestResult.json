@@ -1,0 +1,42 @@
+{
+  "applications": "*",
+  "changelogDate": "20220219164514",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "test_result",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TestResult",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "appUser",
+      "otherEntityRelationshipName": "testResult",
+      "ownerSide": true,
+      "relationshipName": "appUser",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "recommendation",
+      "otherEntityRelationshipName": "testResult",
+      "ownerSide": true,
+      "relationshipName": "recommendation",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "answerUser",
+      "otherEntityRelationshipName": "testResult",
+      "relationshipName": "answerUser",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "profTest",
+      "otherEntityRelationshipName": "testResult",
+      "relationshipName": "profTest",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}
