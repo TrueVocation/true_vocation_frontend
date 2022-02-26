@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "pictures": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Pictures",
+        "createOrEditLabel": "Создать или отредактировать Pictures",
+        "notFound": "Pictures не найдено"
+      },
+      "created": "Новый Pictures создан с идентификатором {{ param }}",
+      "updated": "Pictures обновлен с идентификатором {{ param }}",
+      "deleted": "Pictures удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Pictures {{ id }}?"
+      },
+      "detail": {
+        "title": "Pictures"
+      },
+      "id": "ID",
+      "picture": "Picture",
+      "course": "Course",
+      "university": "University",
+      "portfolio": "Portfolio"
+    }
+  }
+}

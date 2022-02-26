@@ -30,6 +30,7 @@ import TestResult from './test-result';
 import Recommendation from './recommendation';
 import AnswerUser from './answer-user';
 import AppUser from './app-user';
+import Pictures from './pictures';
 /* jhipster-needle-add-route-import - JHipster will add routes here */
 
 const Routes = ({ match }) => (
@@ -62,6 +63,7 @@ const Routes = ({ match }) => (
       <ErrorBoundaryRoute path={`${match.url}recommendation`} component={Recommendation} />
       <ErrorBoundaryRoute path={`${match.url}answer-user`} component={AnswerUser} />
       <ErrorBoundaryRoute path={`${match.url}app-user`} component={AppUser} />
+      <ErrorBoundaryRoute path={`${match.url}pictures`} component={Pictures} />
       {/* jhipster-needle-add-route-path - JHipster will add routes here */}
     </Switch>
   </div>

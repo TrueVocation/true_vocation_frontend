@@ -22,6 +22,7 @@
       "description": "Description",
       "picture": "Picture",
       "contact": "Contact",
+      "pictures": "Pictures",
       "city": "City",
       "profession": "Profession"
     }

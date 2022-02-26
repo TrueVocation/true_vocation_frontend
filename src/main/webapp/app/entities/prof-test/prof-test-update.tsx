@@ -109,6 +109,16 @@ export const ProfTestUpdate = (props: RouteComponentProps<{ id: string }>) => {
                   maxLength: { value: 1000, message: translate('entity.validation.maxlength', { max: 1000 }) },
                 }}
               />
+              <ValidatedField
+                label={translate('truevocationApp.profTest.picture')}
+                id="prof-test-picture"
+                name="picture"
+                data-cy="picture"
+                type="text"
+                validate={{
+                  maxLength: { value: 1000, message: translate('entity.validation.maxlength', { max: 1000 }) },
+                }}
+              />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/prof-test" replace color="info">
                 <FontAwesomeIcon icon="arrow-left" />
                 &nbsp;

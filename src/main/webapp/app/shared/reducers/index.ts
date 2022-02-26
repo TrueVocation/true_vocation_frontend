@@ -63,6 +63,8 @@ import recommendation from 'app/entities/recommendation/recommendation.reducer';
 import answerUser from 'app/entities/answer-user/answer-user.reducer';
 // prettier-ignore
 import appUser from 'app/entities/app-user/app-user.reducer';
+// prettier-ignore
+import pictures from 'app/entities/pictures/pictures.reducer';
 /* jhipster-needle-add-reducer-import - JHipster will add reducer here */
 
 const rootReducer = {
@@ -102,6 +104,7 @@ const rootReducer = {
   recommendation,
   answerUser,
   appUser,
+  pictures,
   /* jhipster-needle-add-reducer-combine - JHipster will add reducer here */
   loadingBar,
 };

@@ -1,0 +1,27 @@
+{
+  "truevocationApp": {
+    "pictures": {
+      "home": {
+        "title": "Pictures",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Pictures",
+        "createOrEditLabel": "Create or edit a Pictures",
+        "notFound": "No Pictures found"
+      },
+      "created": "A new Pictures is created with identifier {{ param }}",
+      "updated": "A Pictures is updated with identifier {{ param }}",
+      "deleted": "A Pictures is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pictures {{ id }}?"
+      },
+      "detail": {
+        "title": "Pictures"
+      },
+      "id": "ID",
+      "picture": "Picture",
+      "course": "Course",
+      "university": "University",
+      "portfolio": "Portfolio"
+    }
+  }
+}

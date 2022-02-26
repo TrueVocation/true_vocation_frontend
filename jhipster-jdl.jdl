@@ -116,6 +116,7 @@ entity ProfTest {
   name String
     description String maxlength(1000)
     instruction String maxlength(1000)
+    picture String maxlength(1000)
 }
 
 entity Question {
@@ -142,6 +143,10 @@ entity AppUser {
   birthdate LocalDate
 }
 
+entity Pictures {
+  picture String maxlength(1000)
+}
+
 
 
 // defining multiple OneToMany relationships with comments
@@ -154,11 +159,14 @@ relationship OneToMany {
     City to University{city}
     City to Course{city}
     Course to Contact{course}
+    Course to Pictures{course}
     University to Contact{university}
     University to Favorite{university}
     University to Comments{university}
+    University to Pictures{university}
     Portfolio to Contact{portfolio}
     Portfolio to Achievement{portfolio}
+    Portfolio to Pictures{portfolio}
     Comments to Likes{comment}
     Comments to CommentAnswer{comment}
     AppUser to Comments{user}

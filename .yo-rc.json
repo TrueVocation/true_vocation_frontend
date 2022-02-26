@@ -44,13 +44,14 @@
       "TestResult",
       "Recommendation",
       "AnswerUser",
-      "AppUser"
+      "AppUser",
+      "Pictures"
     ],
     "entitySuffix": "",
     "jhiPrefix": "",
     "jhipsterVersion": "7.6.0",
     "languages": ["en", "ru"],
-    "lastLiquibaseTimestamp": 1645289117000,
+    "lastLiquibaseTimestamp": 1645860062000,
     "nativeLanguage": "en",
     "otherModules": [],
     "packageName": "com.truevocation",

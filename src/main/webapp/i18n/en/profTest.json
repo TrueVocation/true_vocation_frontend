@@ -21,6 +21,7 @@
       "name": "Name",
       "description": "Description",
       "instruction": "Instruction",
+      "picture": "Picture",
       "question": "Question",
       "testResult": "Test Result"
     }

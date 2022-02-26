@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20220226072102",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "pictures",
+  "fields": [
+    {
+      "fieldName": "picture",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Pictures",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "course",
+      "otherEntityRelationshipName": "pictures",
+      "relationshipName": "course",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "university",
+      "otherEntityRelationshipName": "pictures",
+      "relationshipName": "university",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "portfolio",
+      "otherEntityRelationshipName": "pictures",
+      "relationshipName": "portfolio",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

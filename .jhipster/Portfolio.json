@@ -52,6 +52,12 @@
       "relationshipType": "one-to-many"
     },
     {
+      "otherEntityName": "pictures",
+      "otherEntityRelationshipName": "portfolio",
+      "relationshipName": "pictures",
+      "relationshipType": "one-to-many"
+    },
+    {
       "otherEntityName": "language",
       "otherEntityRelationshipName": "portfolio",
       "ownerSide": true,

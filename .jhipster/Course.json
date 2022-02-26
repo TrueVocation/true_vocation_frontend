@@ -33,6 +33,12 @@
       "relationshipType": "one-to-many"
     },
     {
+      "otherEntityName": "pictures",
+      "otherEntityRelationshipName": "course",
+      "relationshipName": "pictures",
+      "relationshipType": "one-to-many"
+    },
+    {
       "otherEntityName": "city",
       "otherEntityRelationshipName": "course",
       "relationshipName": "city",

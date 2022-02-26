@@ -20,6 +20,12 @@
       "fieldType": "String",
       "fieldValidateRules": ["maxlength"],
       "fieldValidateRulesMaxlength": "1000"
+    },
+    {
+      "fieldName": "picture",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "1000"
     }
   ],
   "fluentMethods": true,

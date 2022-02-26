@@ -4,23 +4,23 @@ import { Button, Row, Col } from 'reactstrap';
 import { Translate } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { getEntity } from './prof-test.reducer';
+import { getEntity } from './pictures.reducer';
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 
-export const ProfTestDetail = (props: RouteComponentProps<{ id: string }>) => {
+export const PicturesDetail = (props: RouteComponentProps<{ id: string }>) => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(getEntity(props.match.params.id));
   }, []);
 
-  const profTestEntity = useAppSelector(state => state.profTest.entity);
+  const picturesEntity = useAppSelector(state => state.pictures.entity);
   return (
     <Row>
       <Col md="8">
-        <h2 data-cy="profTestDetailsHeading">
-          <Translate contentKey="truevocationApp.profTest.detail.title">ProfTest</Translate>
+        <h2 data-cy="picturesDetailsHeading">
+          <Translate contentKey="truevocationApp.pictures.detail.title">Pictures</Translate>
         </h2>
         <dl className="jh-entity-details">
           <dt>
@@ -28,40 +28,34 @@ export const ProfTestDetail = (props: RouteComponentProps<{ id: string }>) => {
               <Translate contentKey="global.field.id">ID</Translate>
             </span>
           </dt>
-          <dd>{profTestEntity.id}</dd>
-          <dt>
-            <span id="name">
-              <Translate contentKey="truevocationApp.profTest.name">Name</Translate>
-            </span>
-          </dt>
-          <dd>{profTestEntity.name}</dd>
-          <dt>
-            <span id="description">
-              <Translate contentKey="truevocationApp.profTest.description">Description</Translate>
-            </span>
-          </dt>
-          <dd>{profTestEntity.description}</dd>
-          <dt>
-            <span id="instruction">
-              <Translate contentKey="truevocationApp.profTest.instruction">Instruction</Translate>
-            </span>
-          </dt>
-          <dd>{profTestEntity.instruction}</dd>
+          <dd>{picturesEntity.id}</dd>
           <dt>
             <span id="picture">
-              <Translate contentKey="truevocationApp.profTest.picture">Picture</Translate>
+              <Translate contentKey="truevocationApp.pictures.picture">Picture</Translate>
             </span>
           </dt>
-          <dd>{profTestEntity.picture}</dd>
+          <dd>{picturesEntity.picture}</dd>
+          <dt>
+            <Translate contentKey="truevocationApp.pictures.course">Course</Translate>
+          </dt>
+          <dd>{picturesEntity.course ? picturesEntity.course.id : ''}</dd>
+          <dt>
+            <Translate contentKey="truevocationApp.pictures.university">University</Translate>
+          </dt>
+          <dd>{picturesEntity.university ? picturesEntity.university.id : ''}</dd>
+          <dt>
+            <Translate contentKey="truevocationApp.pictures.portfolio">Portfolio</Translate>
+          </dt>
+          <dd>{picturesEntity.portfolio ? picturesEntity.portfolio.id : ''}</dd>
         </dl>
-        <Button tag={Link} to="/prof-test" replace color="info" data-cy="entityDetailsBackButton">
+        <Button tag={Link} to="/pictures" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}
           <span className="d-none d-md-inline">
             <Translate contentKey="entity.action.back">Back</Translate>
           </span>
         </Button>
         &nbsp;
-        <Button tag={Link} to={`/prof-test/${profTestEntity.id}/edit`} replace color="primary">
+        <Button tag={Link} to={`/pictures/${picturesEntity.id}/edit`} replace color="primary">
           <FontAwesomeIcon icon="pencil-alt" />{' '}
           <span className="d-none d-md-inline">
             <Translate contentKey="entity.action.edit">Edit</Translate>
@@ -72,4 +66,4 @@ export const ProfTestDetail = (props: RouteComponentProps<{ id: string }>) => {
   );
 };
 
-export default ProfTestDetail;
+export default PicturesDetail;

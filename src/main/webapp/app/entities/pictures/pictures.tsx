@@ -4,23 +4,23 @@ import { Button, Table } from 'reactstrap';
 import { Translate, getSortState, JhiPagination, JhiItemCount } from 'react-jhipster';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { getEntities } from './prof-test.reducer';
-import { IProfTest } from 'app/shared/model/prof-test.model';
+import { getEntities } from './pictures.reducer';
+import { IPictures } from 'app/shared/model/pictures.model';
 import { APP_DATE_FORMAT, APP_LOCAL_DATE_FORMAT } from 'app/config/constants';
 import { ASC, DESC, ITEMS_PER_PAGE, SORT } from 'app/shared/util/pagination.constants';
 import { overridePaginationStateWithQueryParams } from 'app/shared/util/entity-utils';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 
-export const ProfTest = (props: RouteComponentProps<{ url: string }>) => {
+export const Pictures = (props: RouteComponentProps<{ url: string }>) => {
   const dispatch = useAppDispatch();
 
   const [paginationState, setPaginationState] = useState(
     overridePaginationStateWithQueryParams(getSortState(props.location, ITEMS_PER_PAGE, 'id'), props.location.search)
   );
 
-  const profTestList = useAppSelector(state => state.profTest.entities);
-  const loading = useAppSelector(state => state.profTest.loading);
-  const totalItems = useAppSelector(state => state.profTest.totalItems);
+  const picturesList = useAppSelector(state => state.pictures.entities);
+  const loading = useAppSelector(state => state.pictures.loading);
+  const totalItems = useAppSelector(state => state.pictures.totalItems);
 
   const getAllEntities = () => {
     dispatch(
@@ -81,58 +81,58 @@ export const ProfTest = (props: RouteComponentProps<{ url: string }>) => {
 
   return (
     <div>
-      <h2 id="prof-test-heading" data-cy="ProfTestHeading">
-        <Translate contentKey="truevocationApp.profTest.home.title">Prof Tests</Translate>
+      <h2 id="pictures-heading" data-cy="PicturesHeading">
+        <Translate contentKey="truevocationApp.pictures.home.title">Pictures</Translate>
         <div className="d-flex justify-content-end">
           <Button className="me-2" color="info" onClick={handleSyncList} disabled={loading}>
             <FontAwesomeIcon icon="sync" spin={loading} />{' '}
-            <Translate contentKey="truevocationApp.profTest.home.refreshListLabel">Refresh List</Translate>
+            <Translate contentKey="truevocationApp.pictures.home.refreshListLabel">Refresh List</Translate>
           </Button>
           <Link to={`${match.url}/new`} className="btn btn-primary jh-create-entity" id="jh-create-entity" data-cy="entityCreateButton">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
-            <Translate contentKey="truevocationApp.profTest.home.createLabel">Create new Prof Test</Translate>
+            <Translate contentKey="truevocationApp.pictures.home.createLabel">Create new Pictures</Translate>
           </Link>
         </div>
       </h2>
       <div className="table-responsive">
-        {profTestList && profTestList.length > 0 ? (
+        {picturesList && picturesList.length > 0 ? (
           <Table responsive>
             <thead>
               <tr>
                 <th className="hand" onClick={sort('id')}>
-                  <Translate contentKey="truevocationApp.profTest.id">ID</Translate> <FontAwesomeIcon icon="sort" />
-                </th>
-                <th className="hand" onClick={sort('name')}>
-                  <Translate contentKey="truevocationApp.profTest.name">Name</Translate> <FontAwesomeIcon icon="sort" />
-                </th>
-                <th className="hand" onClick={sort('description')}>
-                  <Translate contentKey="truevocationApp.profTest.description">Description</Translate> <FontAwesomeIcon icon="sort" />
-                </th>
-                <th className="hand" onClick={sort('instruction')}>
-                  <Translate contentKey="truevocationApp.profTest.instruction">Instruction</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="truevocationApp.pictures.id">ID</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th className="hand" onClick={sort('picture')}>
-                  <Translate contentKey="truevocationApp.profTest.picture">Picture</Translate> <FontAwesomeIcon icon="sort" />
+                  <Translate contentKey="truevocationApp.pictures.picture">Picture</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="truevocationApp.pictures.course">Course</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="truevocationApp.pictures.university">University</Translate> <FontAwesomeIcon icon="sort" />
+                </th>
+                <th>
+                  <Translate contentKey="truevocationApp.pictures.portfolio">Portfolio</Translate> <FontAwesomeIcon icon="sort" />
                 </th>
                 <th />
               </tr>
             </thead>
             <tbody>
-              {profTestList.map((profTest, i) => (
+              {picturesList.map((pictures, i) => (
                 <tr key={`entity-${i}`} data-cy="entityTable">
                   <td>
-                    <Button tag={Link} to={`${match.url}/${profTest.id}`} color="link" size="sm">
-                      {profTest.id}
+                    <Button tag={Link} to={`${match.url}/${pictures.id}`} color="link" size="sm">
+                      {pictures.id}
                     </Button>
                   </td>
-                  <td>{profTest.name}</td>
-                  <td>{profTest.description}</td>
-                  <td>{profTest.instruction}</td>
-                  <td>{profTest.picture}</td>
+                  <td>{pictures.picture}</td>
+                  <td>{pictures.course ? <Link to={`course/${pictures.course.id}`}>{pictures.course.id}</Link> : ''}</td>
+                  <td>{pictures.university ? <Link to={`university/${pictures.university.id}`}>{pictures.university.id}</Link> : ''}</td>
+                  <td>{pictures.portfolio ? <Link to={`portfolio/${pictures.portfolio.id}`}>{pictures.portfolio.id}</Link> : ''}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
-                      <Button tag={Link} to={`${match.url}/${profTest.id}`} color="info" size="sm" data-cy="entityDetailsButton">
+                      <Button tag={Link} to={`${match.url}/${pictures.id}`} color="info" size="sm" data-cy="entityDetailsButton">
                         <FontAwesomeIcon icon="eye" />{' '}
                         <span className="d-none d-md-inline">
                           <Translate contentKey="entity.action.view">View</Translate>
@@ -140,7 +140,7 @@ export const ProfTest = (props: RouteComponentProps<{ url: string }>) => {
                       </Button>
                       <Button
                         tag={Link}
-                        to={`${match.url}/${profTest.id}/edit?page=${paginationState.activePage}&sort=${paginationState.sort},${paginationState.order}`}
+                        to={`${match.url}/${pictures.id}/edit?page=${paginationState.activePage}&sort=${paginationState.sort},${paginationState.order}`}
                         color="primary"
                         size="sm"
                         data-cy="entityEditButton"
@@ -152,7 +152,7 @@ export const ProfTest = (props: RouteComponentProps<{ url: string }>) => {
                       </Button>
                       <Button
                         tag={Link}
-                        to={`${match.url}/${profTest.id}/delete?page=${paginationState.activePage}&sort=${paginationState.sort},${paginationState.order}`}
+                        to={`${match.url}/${pictures.id}/delete?page=${paginationState.activePage}&sort=${paginationState.sort},${paginationState.order}`}
                         color="danger"
                         size="sm"
                         data-cy="entityDeleteButton"
@@ -171,13 +171,13 @@ export const ProfTest = (props: RouteComponentProps<{ url: string }>) => {
         ) : (
           !loading && (
             <div className="alert alert-warning">
-              <Translate contentKey="truevocationApp.profTest.home.notFound">No Prof Tests found</Translate>
+              <Translate contentKey="truevocationApp.pictures.home.notFound">No Pictures found</Translate>
             </div>
           )
         )}
       </div>
       {totalItems ? (
-        <div className={profTestList && profTestList.length > 0 ? '' : 'd-none'}>
+        <div className={picturesList && picturesList.length > 0 ? '' : 'd-none'}>
           <div className="justify-content-center d-flex">
             <JhiItemCount page={paginationState.activePage} total={totalItems} itemsPerPage={paginationState.itemsPerPage} i18nEnabled />
           </div>
@@ -198,4 +198,4 @@ export const ProfTest = (props: RouteComponentProps<{ url: string }>) => {
   );
 };
 
-export default ProfTest;
+export default Pictures;

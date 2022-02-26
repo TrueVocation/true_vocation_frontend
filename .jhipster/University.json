@@ -65,6 +65,12 @@
       "relationshipType": "one-to-many"
     },
     {
+      "otherEntityName": "pictures",
+      "otherEntityRelationshipName": "university",
+      "relationshipName": "pictures",
+      "relationshipType": "one-to-many"
+    },
+    {
       "otherEntityName": "faculty",
       "otherEntityRelationshipName": "university",
       "ownerSide": true,

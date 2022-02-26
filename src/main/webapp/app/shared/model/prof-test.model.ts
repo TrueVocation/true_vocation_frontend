@@ -6,6 +6,7 @@ export interface IProfTest {
   name?: string | null;
   description?: string | null;
   instruction?: string | null;
+  picture?: string | null;
   questions?: IQuestion[] | null;
   testResults?: ITestResult[] | null;
 }
