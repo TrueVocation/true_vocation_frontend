@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Translate, translate, ValidatedField, ValidatedForm, isEmail } from 'react-jhipster';
 import { Row, Col, Alert, Button } from 'reactstrap';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 import PasswordStrengthBar from 'app/shared/layout/password/password-strength-bar';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
@@ -110,9 +111,9 @@ export const RegisterPage = () => {
             <span>
               <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
             </span>
-            <a className="alert-link">
+            <Link to="/login" className="alert-link">
               <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
-            </a>
+            </Link>
             <span>
               <Translate contentKey="global.messages.info.authenticated.suffix">
                 , you can try the default accounts:
