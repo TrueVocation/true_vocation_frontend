@@ -17,7 +17,7 @@ export const Brand = () => (
     <span className="brand-title">
       <Translate contentKey="global.title">Truevocation</Translate>
     </span>
-    <span className="navbar-version">{VERSION}</span>
+    {/* <span className="navbar-version">{VERSION}</span>*/}
   </NavbarBrand>
 );
 
