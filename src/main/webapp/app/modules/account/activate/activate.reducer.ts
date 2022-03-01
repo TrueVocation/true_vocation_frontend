@@ -12,7 +12,7 @@ export type ActivateState = Readonly<typeof initialState>;
 
 // Actions
 
-export const activateAction = createAsyncThunk('activate/activate_account', async (key: string) => axios.get(`api/activate?key=${key}`), {
+export const activateAction = createAsyncThunk('activate/activate_account', async (key: string) => axios.get(`api/account/activate?key=${key}`), {
   serializeError: serializeAxiosError,
 });
 
